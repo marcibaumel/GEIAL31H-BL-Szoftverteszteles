@@ -6,13 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="core" />
+        <module name="AutoTests" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="02gyak" target="16" />
-      <module name="core" target="16" />
-      <module name="Teszteles" target="16" />
-    </bytecodeTargetLevel>
   </component>
 </project>

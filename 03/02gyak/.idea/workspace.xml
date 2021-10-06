@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9e0b5589-225d-43ab-b34c-c0c6d51abe55" name="Changes" comment="Clearing" />
+    <list default="true" id="9e0b5589-225d-43ab-b34c-c0c6d51abe55" name="Changes" comment="Clearing">
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/main/java/Auto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/main/java/HanggalRendelkezo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/main/java/Kivitel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/main/java/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/main/java/Uzemanyag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/main/java/Valto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../autoTestExample/src/test/java/AutoTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -128,13 +144,29 @@
       <recent name="el_02_tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.AutoTest.test">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="02gyak" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AutoTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="02gyak" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.AutoTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -157,6 +189,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AutoTest.test" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.HelloTestWorldTest.Test" />
       </list>
@@ -174,7 +207,7 @@
       <workItem from="1632901725094" duration="32000" />
       <workItem from="1632902021200" duration="515000" />
       <workItem from="1633070519056" duration="21000" />
-      <workItem from="1633499960908" duration="1599000" />
+      <workItem from="1633499960908" duration="2318000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1632900352762</created>
