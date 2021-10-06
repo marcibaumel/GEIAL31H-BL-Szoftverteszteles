@@ -119,7 +119,12 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+      <recent name="tests" />
       <recent name="el_02_tests" />
     </key>
   </component>
@@ -168,6 +173,8 @@
       <workItem from="1632896615571" duration="2703000" />
       <workItem from="1632901725094" duration="32000" />
       <workItem from="1632902021200" duration="515000" />
+      <workItem from="1633070519056" duration="21000" />
+      <workItem from="1633499960908" duration="1599000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1632900352762</created>
