@@ -1,4 +1,6 @@
 import Exceptions.AjtokSzamaNemMegfelelo;
+import Exceptions.GyartasIdoNemMegfelelo;
+import Exceptions.RendszamNemMegfelelo;
 
 import java.time.LocalDate;
 import java.util.HashMap;
@@ -64,7 +66,11 @@ public class Auto implements HanggalRendelkezo {
         return rendszam;
     }
 
-    public void setRendszam(String rendszam) {
+    public void setRendszam(String rendszam) throws RendszamNemMegfelelo {
+        String regex = "^([^a-z0-9Q]{3}-(?!000)[0-9]{3})$";
+        if(!rendszam.matches(regex)) {
+            throw new RendszamNemMegfelelo(rendszam);
+        }
         this.rendszam = rendszam;
     }
 
@@ -80,7 +86,11 @@ public class Auto implements HanggalRendelkezo {
         return gyartasiIdo;
     }
 
-    protected void setGyartasiIdo(LocalDate gyartasiIdo) {
+    //TODO if branch fix
+    protected void setGyartasiIdo(LocalDate gyartasiIdo) throws GyartasIdoNemMegfelelo {
+        if(!gyartasiIdo.isAfter(LocalDate.now()) || !gyartasiIdo.isBefore(LocalDate.of(1885,1,1))){
+            throw new GyartasIdoNemMegfelelo(gyartasiIdo);
+        }
         this.gyartasiIdo = gyartasiIdo;
     }
 
