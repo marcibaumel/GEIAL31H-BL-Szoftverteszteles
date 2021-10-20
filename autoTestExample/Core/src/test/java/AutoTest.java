@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import java.time.LocalDate;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class AutoTest {
 
@@ -99,4 +99,16 @@ public class AutoTest {
         auto.setGyartasiIdo(LocalDate.parse(gyartasIdo));
     }
 
+    @Test
+    public void testSzinkodSetter(){
+        String szinkod = "#FFFFFF";
+        auto.setSzinHex(szinkod);
+        assertEquals(szinkod, auto.getSzinHex());
+    }
+
+    @Test
+    public void testSzinkodGetter(){
+        auto.szinHex = "#FFFFFF";
+        assertEquals(auto.szinHex, auto.getSzinHex());
+    }
 }

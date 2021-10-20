@@ -20,13 +20,13 @@ public class Auto implements HanggalRendelkezo {
         hengerurtartalomErtekek.put("1.6", 1560);
     }
 
-    private String gyarto;
-    private String modell;
+    protected String gyarto;
+    protected String modell;
     private Integer hengerurtartalom;
     private String rendszam;
     private Uzemanyag uzemanyag;
     private LocalDate gyartasiIdo;
-    private String szinHex;
+    protected String szinHex;
     private boolean korozott;
     private String forgalmiSzama;
     private Valto valto;
@@ -86,9 +86,8 @@ public class Auto implements HanggalRendelkezo {
         return gyartasiIdo;
     }
 
-    //TODO if branch fix
     protected void setGyartasiIdo(LocalDate gyartasiIdo) throws GyartasIdoNemMegfelelo {
-        if(!gyartasiIdo.isAfter(LocalDate.now()) || !gyartasiIdo.isBefore(LocalDate.of(1885,1,1))){
+        if (gyartasiIdo.isAfter(LocalDate.now()) || gyartasiIdo.isBefore(LocalDate.of(1885, 1, 1))) {
             throw new GyartasIdoNemMegfelelo(gyartasiIdo);
         }
         this.gyartasiIdo = gyartasiIdo;
