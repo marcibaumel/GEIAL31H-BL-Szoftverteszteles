@@ -16,7 +16,7 @@ public class AutoServices {
         this.dao = dao;
     }
 
-    public Auto getAutoById(String rendszam) throws AutoNemTalalhato {
+    public Auto getAutoById(String rendszam) throws AutoNemTalalhato, RendszamNemMegfelelo {
         return dao.readAutoById(rendszam);
     }
 

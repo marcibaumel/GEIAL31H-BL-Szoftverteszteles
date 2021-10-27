@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="AutoTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="AutoRendszamTest" time="0.006" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,20 +59,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="AutoTest" name="testSzinkodSetter" time="0"/>
-  <testcase classname="AutoTest" name="testQBetusRendszam" time="0.001"/>
-  <testcase classname="AutoTest" name="testAjtokSzamaMaga" time="0"/>
-  <testcase classname="AutoTest" name="testCsakSzamRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testCsakBetuRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testNemMegfeleloRendszam" time="0.001"/>
-  <testcase classname="AutoTest" name="testTulHosszuSzamRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testAjtokSzamaAlacsony" time="0"/>
-  <testcase classname="AutoTest" name="testTulHosszuBetuRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testAjtokSzamaMegfelelo" time="0"/>
-  <testcase classname="AutoTest" name="testJoRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testGyartasiIdoJo" time="0.013"/>
-  <testcase classname="AutoTest" name="testGyartasiIdoKorai" time="0"/>
-  <testcase classname="AutoTest" name="testGyartasiIdoKésői" time="0"/>
-  <testcase classname="AutoTest" name="testKisbetusRendszam" time="0.001"/>
-  <testcase classname="AutoTest" name="testSzinkodGetter" time="0"/>
+  <testcase classname="AutoRendszamTest" name="testRendszam[0]" time="0.005"/>
+  <testcase classname="AutoRendszamTest" name="testRendszam[1]" time="0"/>
+  <testcase classname="AutoRendszamTest" name="testRendszam[2]" time="0"/>
+  <testcase classname="AutoRendszamTest" name="testRendszam[3]" time="0"/>
+  <testcase classname="AutoRendszamTest" name="testRendszam[4]" time="0"/>
+  <testcase classname="AutoRendszamTest" name="testRendszam[5]" time="0.001"/>
 </testsuite>

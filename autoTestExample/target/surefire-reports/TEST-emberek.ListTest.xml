@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="16" failures="0" name="AutoTest" time="0.016" errors="0" skipped="0">
+<testsuite tests="7" failures="0" name="emberek.ListTest" time="0.002" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2021.2.1"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -59,20 +59,11 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="AutoTest" name="testSzinkodSetter" time="0"/>
-  <testcase classname="AutoTest" name="testQBetusRendszam" time="0.001"/>
-  <testcase classname="AutoTest" name="testAjtokSzamaMaga" time="0"/>
-  <testcase classname="AutoTest" name="testCsakSzamRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testCsakBetuRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testNemMegfeleloRendszam" time="0.001"/>
-  <testcase classname="AutoTest" name="testTulHosszuSzamRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testAjtokSzamaAlacsony" time="0"/>
-  <testcase classname="AutoTest" name="testTulHosszuBetuRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testAjtokSzamaMegfelelo" time="0"/>
-  <testcase classname="AutoTest" name="testJoRendszam" time="0"/>
-  <testcase classname="AutoTest" name="testGyartasiIdoJo" time="0.013"/>
-  <testcase classname="AutoTest" name="testGyartasiIdoKorai" time="0"/>
-  <testcase classname="AutoTest" name="testGyartasiIdoKésői" time="0"/>
-  <testcase classname="AutoTest" name="testKisbetusRendszam" time="0.001"/>
-  <testcase classname="AutoTest" name="testSzinkodGetter" time="0"/>
+  <testcase classname="emberek.ListTest" name="newEmberByName" time="0.001"/>
+  <testcase classname="emberek.ListTest" name="newEmberBySize" time="0"/>
+  <testcase classname="emberek.ListTest" name="deleteExistingEmber" time="0"/>
+  <testcase classname="emberek.ListTest" name="deleteNonExistingEmber" time="0"/>
+  <testcase classname="emberek.ListTest" name="checkSize" time="0"/>
+  <testcase classname="emberek.ListTest" name="checkEmptiness" time="0"/>
+  <testcase classname="emberek.ListTest" name="removeAll" time="0.001"/>
 </testsuite>

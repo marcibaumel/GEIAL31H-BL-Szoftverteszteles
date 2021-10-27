@@ -30,8 +30,6 @@ public class UserTest {
         String user = "Valaki";
         String password = "123";
 
-        //when(databaseConnection.checkUserPass(user, password)).thenReturn(true);
-
         Integer sum = u.sumData(user, password, 5, 4);
         Integer expected = 9;
 

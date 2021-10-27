@@ -5,6 +5,7 @@ import Exceptions.RendszamNemMegfelelo;
 import java.time.LocalDate;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class Auto implements HanggalRendelkezo {
     public static Map<String, Integer> hengerurtartalomErtekek;
@@ -162,5 +163,18 @@ public class Auto implements HanggalRendelkezo {
         this.valto = valto;
         this.kivitel = kivitel;
         this.ajtokSzama = ajtokSzama;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Auto auto = (Auto) o;
+        return korozott == auto.korozott && ajtokSzama == auto.ajtokSzama && Objects.equals(gyarto, auto.gyarto) && Objects.equals(modell, auto.modell) && Objects.equals(hengerurtartalom, auto.hengerurtartalom) && Objects.equals(rendszam, auto.rendszam) && uzemanyag == auto.uzemanyag && Objects.equals(gyartasiIdo, auto.gyartasiIdo) && Objects.equals(szinHex, auto.szinHex) && Objects.equals(forgalmiSzama, auto.forgalmiSzama) && valto == auto.valto && kivitel == auto.kivitel;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(gyarto, modell, hengerurtartalom, rendszam, uzemanyag, gyartasiIdo, szinHex, korozott, forgalmiSzama, valto, kivitel, ajtokSzama);
     }
 }
