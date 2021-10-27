@@ -17,13 +17,15 @@ import java.util.Collection;
 
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.atLeast;
+import static org.mockito.Mockito.times;
 
 @RunWith(MockitoJUnitRunner.class)
 public class AutoServicesTest {
 
     private AutoServices service;
     private Collection<Auto> autos;
-    private AutoDao mock;
+    private static AutoDao mock;
 
     @Before
     public void setUp() throws AutoNemTalalhato {
@@ -92,8 +94,8 @@ public class AutoServicesTest {
 
 
     @AfterClass
-    public void verify(){
-        Mockito.verify(mock).createAuto(org.mockito.Matchers.);
+    public static void verify(){
+        Mockito.verify(mock, atLeast(1)).readAllAuto();
     }
 
 }
